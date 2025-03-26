@@ -1,17 +1,24 @@
 [project]
 name = "ai-tryouts"
-version = "0.0.1"
-description = "Studies of ai"
+version = "0.1.0"
+description = ""
 authors = [
     {name = "YoYolops",email = "yohan.rodrigues@ccc.ufcg.edu.br"}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "numpy (>=2.2.4,<3.0.0)",
-    "pandas (>=2.2.3,<3.0.0)"
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.4,<3.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
